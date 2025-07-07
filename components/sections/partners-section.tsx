@@ -12,7 +12,7 @@ export const PartnersSection = () => {
       name: "Devs Norte",
       category: "Comunidade",
       description: "Comunidade de desenvolvedores da região Norte",
-      logo: "https://devsnorte.com/icons/logo-light.svg",
+      logo: "https://images.sympla.com.br/62ffb584a57cc.png",
       color: "from-blue-500 to-purple-600",
       benefits: ["Networking", "Eventos", "Mentorias"],
       link: "https://t.me/devsnorte"
@@ -27,10 +27,10 @@ export const PartnersSection = () => {
       link: "https://www.whatsapp.com/channel/0029Vb51w8x60eBbVwEEYN2B"
     },
     {
-      name: "UEPA | Comunidade Acadêmica",
+      name: "UEPA Comunidade Acadêmica",
       category: "Educação",
       description: "Servidor do Discord extraoficial da UEPA",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQGrjOiCeou-fQ/company-logo_200_200/company-logo_200_200/0/1631330379520?e=1757548800&v=beta&t=Y4mS0Ez0tTQibHPqaHgcB4CzRmVJlpPzHdLIcWFSiVw",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Brasaouepa.jpg/500px-Brasaouepa.jpg",
       color: "from-blue-500 to-indigo-600",
       benefits: ["Discord", "Comunidade", "Oportunidades"],
       link: "https://discord.gg/2cShkQTXYk"
