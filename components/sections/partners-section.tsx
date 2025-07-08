@@ -34,6 +34,15 @@ export const PartnersSection = () => {
       color: "from-blue-500 to-indigo-600",
       benefits: ["Discord", "Comunidade", "Oportunidades"],
       link: "https://discord.gg/2cShkQTXYk"
+    },
+    {
+      name: "Run as Cloud",
+      category: "Comunidade",
+      description: "Comunidade de apoio a iniciantes em Cloud Computing",
+      logo: "https://cdn.discordapp.com/attachments/1331364437067829328/1392199945339142174/runascloud.png?ex=686eaabc&is=686d593c&hm=6366f930d537bf922a12f9c13a7495c7eabcb13b67a037de3f59c6fde2440447&",
+      color: "from-green-500 to-lime-600",
+      benefits: ["Networking", "Eventos", "Mentorias", "Cloud Computing", "AWS"],
+      link: "https://chat.whatsapp.com/H1m8rW55ibr1hyQ5RB1QFW"
     }
   ]
 
