@@ -1,9 +1,10 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Code, Github, Instagram, Linkedin, MessageCircle } from "lucide-react"
+import { Code, Github, Instagram, Linkedin, MessageCircle, BookOpen } from "lucide-react"
 import { Section } from "@/components/section"
 import Image from "next/image"
+import Link from "next/link"
 
 interface HeroSectionProps {
   scrollToSection: (sectionId: string) => void
@@ -73,6 +74,19 @@ export const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
                 <MessageCircle size={20} className="text-caesoft-light group-hover:text-caesoft-green transition-colors duration-300" />
               </a>
               </div>
+            </div>
+
+            {/* Botão Guia do Calouro */}
+            <div className="animate-fade-in">
+              <Link href="/guia-do-calouro">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-caesoft-purple to-caesoft-green hover:from-caesoft-purple/90 hover:to-caesoft-green/90 text-white font-medium px-8 py-6 text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto"
+                >
+                  <BookOpen size={20} />
+                  Acesse o Guia do Calouro
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

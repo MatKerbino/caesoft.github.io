@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, BookOpen } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -89,6 +90,15 @@ export function Navbar() {
                   <span className="relative z-10">{item.label}</span>
                 </button>
               ))}
+              
+              {/* Botão Guia do Calouro */}
+              <Link
+                href="/guia-do-calouro"
+                className="relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full bg-gradient-to-r from-caesoft-purple to-caesoft-green text-white hover:shadow-lg hover:shadow-caesoft-purple/30 flex items-center gap-2"
+              >
+                <BookOpen size={16} />
+                <span>Guia do Calouro</span>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -123,6 +133,16 @@ export function Navbar() {
                   {item.label}
                 </button>
               ))}
+              
+              {/* Link Guia do Calouro no Mobile */}
+              <Link
+                href="/guia-do-calouro"
+                className="relative text-left px-4 py-3 rounded-lg transition-all duration-300 bg-gradient-to-r from-caesoft-purple to-caesoft-green text-white flex items-center gap-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <BookOpen size={16} />
+                Guia do Calouro
+              </Link>
             </div>
           </div>
         </div>
