@@ -50,7 +50,7 @@ const directors: DirectorMember[] = [
     name: "Thaylan Fonseca",
     position: "Organizador de Eventos",
     description: "Responsável pela organização e coordenação de eventos, workshops, palestras e atividades acadêmicas do CAESoft.",
-    photo: "/placeholder-avatar.svg",
+    photo: "/thaylanfonseca.jpg",
     linkedinUrl: "#"
   },
   {

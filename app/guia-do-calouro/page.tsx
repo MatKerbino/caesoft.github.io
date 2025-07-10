@@ -177,6 +177,17 @@ export default function GuiaDoCalouro() {
               </p>
             </div>
 
+            {/* Comentário Veterano 2 */}
+            <div className="mb-6 p-6 bg-caesoft-purple/10 rounded-xl border border-caesoft-purple/20">
+              <div className="flex items-center mb-3">
+                <Star className="w-5 h-5 text-caesoft-gold mr-2" />
+                <span className="font-semibold text-caesoft-purple"><a href="https://www.linkedin.com/in/thaylanbf1" target="_blank" rel="noopener noreferrer">Thaylan Fonseca</a> - 2024.2</span>
+              </div>
+              <p className="text-light-dimmed italic">
+                "A melhor dica que posso dar a vocês é: confiem mais em si mesmos. Digo isso com propriedade, como alguém que já duvidou inúmeras vezes da própria capacidade. Com o tempo, percebi que o nosso potencial não desaparece, ele apenas se esconde, esperando o momento, o espaço e a coragem certos para aparecer. Acreditem: vocês têm força, talento e valor. Muitas vezes, tudo o que falta é se permitir acreditar, mesmo quando o medo aperta e quando há pessoas ao redor que não enxergam o que vocês carregam por dentro."
+              </p>
+            </div>
+
           </div>
 
           {/* Sobre o Curso */}
