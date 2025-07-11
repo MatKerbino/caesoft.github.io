@@ -12,7 +12,7 @@ export const PartnersSection = () => {
       name: "Devs Norte",
       category: "Comunidade",
       description: "Comunidade de desenvolvedores da região Norte",
-      logo: "/devsnorte.png",
+      logo: "DN",
       color: "from-blue-500 to-purple-600",
       benefits: ["Networking", "Eventos", "Mentorias"],
       link: "https://t.me/devsnorte"
@@ -48,7 +48,7 @@ export const PartnersSection = () => {
       name: "GruPy Pará",
       category: "Comunidade",
       description: "Comunidade de usuários e desenvolvedores que utilizam Python no Pará",
-      logo: "/grupypara.png",
+      logo: "/grupypara.jpg",
       color: "from-caesoft-purple to-caesoft-green",
       benefits: ["Networking", "Eventos", "Mentorias", "Python", "Data Science"],
       link: "https://discord.gg/98eURQMjQp"
@@ -95,7 +95,7 @@ export const PartnersSection = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <div className={`w-12 h-12 bg-gradient-to-br ${partner.color} rounded-xl flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform overflow-hidden`}>
-                      {partner.logo.startsWith('http') ? (
+                      {partner.logo.startsWith('http') || partner.logo.startsWith('/') ? (
                         <img 
                           src={partner.logo} 
                           alt={partner.name}
