@@ -12,7 +12,7 @@ export const PartnersSection = () => {
       name: "Devs Norte",
       category: "Comunidade",
       description: "Comunidade de desenvolvedores da região Norte",
-      logo: "https://images.sympla.com.br/62ffb584a57cc.png",
+      logo: "/devsnorte.png",
       color: "from-blue-500 to-purple-600",
       benefits: ["Networking", "Eventos", "Mentorias"],
       link: "https://t.me/devsnorte"
@@ -21,7 +21,7 @@ export const PartnersSection = () => {
       name: "TE LIGA NA UEPA",
       category: "Educação",
       description: "Canal do WhatsApp extraoficial para divulgação de eventos e oportunidades.",
-      logo: "https://media.discordapp.net/attachments/1345531254757523507/1391476313570934976/476400711_1297593341494663_3607891328123552557_n.jpg?ex=686cb18d&is=686b600d&hm=e8fec5e208c95e2cc9d0422fe45f1db9420b334842609944b1cf92504afb61fa&=&format=webp&width=902&height=902",
+      logo: "/teliganauepa.jpg",
       color: "from-purple-500 to-indigo-600",
       benefits: ["Integração", "Projetos", "Capacitação"],
       link: "https://www.whatsapp.com/channel/0029Vb51w8x60eBbVwEEYN2B"
@@ -30,7 +30,7 @@ export const PartnersSection = () => {
       name: "UEPA Comunidade Acadêmica",
       category: "Educação",
       description: "Servidor do Discord extraoficial da UEPA",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Brasaouepa.jpg/500px-Brasaouepa.jpg",
+      logo: "/uepa.jpg",
       color: "from-blue-500 to-indigo-600",
       benefits: ["Discord", "Comunidade", "Oportunidades"],
       link: "https://discord.gg/2cShkQTXYk"
@@ -39,15 +39,24 @@ export const PartnersSection = () => {
       name: "Run as Cloud",
       category: "Comunidade",
       description: "Comunidade de apoio a iniciantes em Cloud Computing",
-      logo: "https://cdn.discordapp.com/attachments/1331364437067829328/1392199945339142174/runascloud.png?ex=686eaabc&is=686d593c&hm=6366f930d537bf922a12f9c13a7495c7eabcb13b67a037de3f59c6fde2440447&",
+      logo: "/runascloud.png",
       color: "from-green-500 to-lime-600",
       benefits: ["Networking", "Eventos", "Mentorias", "Cloud Computing", "AWS"],
       link: "https://chat.whatsapp.com/H1m8rW55ibr1hyQ5RB1QFW"
+    },
+    {
+      name: "GruPy Pará",
+      category: "Comunidade",
+      description: "Comunidade de usuários e desenvolvedores que utilizam Python no Pará",
+      logo: "/grupypara.png",
+      color: "from-caesoft-purple to-caesoft-green",
+      benefits: ["Networking", "Eventos", "Mentorias", "Python", "Data Science"],
+      link: "https://discord.gg/98eURQMjQp"
     }
   ]
 
   const partnershipStats = [
-    { icon: Building2, number: "3", label: "Parceiros Ativos" },
+    { icon: Building2, number: "4", label: "Parceiros Ativos" },
     { icon: Users, number: "500+", label: "Membros Conectados" },
     { icon: Award, number: "20+", label: "Eventos Realizados" },
     { icon: Handshake, number: "50+", label: "Oportunidades Criadas" }

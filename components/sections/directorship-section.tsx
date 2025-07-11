@@ -114,7 +114,7 @@ const directors: DirectorMember[] = [
     "name": "Valdemiro Facundo",
     "position": "Multimídia",
     "description": "Responsável pela criação de conteúdo multimídia, como vídeos e animações, para as atividades do CAESoft.",
-    "photo": "/placeholder-avatar.svg",
+    "photo": "/valdemirofacundo.png",
     "linkedinUrl": "#"
   },
   {
