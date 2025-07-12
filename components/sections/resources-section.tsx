@@ -3,10 +3,17 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Section } from "@/components/section"
-import { FileText, BookOpen, Calendar, MessageCircle, Users, Library, Calculator, MessageSquare } from "lucide-react"
+import { FileText, BookOpen, Calendar, MessageCircle, Users, Library, Calculator, MessageSquare, ExternalLink } from "lucide-react"
 
 export const ResourcesSection = () => {
   const resources = [
+    {
+      icon: ExternalLink,
+      title: "Sistema Integrado de Gestão de Atividades Acadêmicas (SIGAA)",
+      description: "Portal acadêmico para matrículas, notas e histórico escolar",
+      link: "https://sigaa.uepa.br",
+      external: true
+    },
     {
       icon: BookOpen,
       title: "PPC do Curso",

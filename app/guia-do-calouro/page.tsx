@@ -231,6 +231,65 @@ export default function GuiaDoCalouro() {
             </div>
           </div>
 
+          {/* Sistema de Avaliação */}
+          <div className="glass-effect-light border border-primary-soft rounded-2xl p-8 md:p-12">
+            <h3 className="text-2xl font-bold text-light mb-6 flex items-center">
+              <Target className="w-6 h-6 mr-3 text-caesoft-blue" />
+              Como Funciona o Sistema de Avaliação
+            </h3>
+            <div className="space-y-6">
+              <div className="bg-caesoft-green/10 border border-caesoft-green/20 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-caesoft-green mb-3">✅ Cenário Ideal</h4>
+                <p className="text-light-dimmed">
+                  Se você tirar <strong>8,0 na primeira avaliação</strong> e <strong>8,0 na segunda avaliação</strong>, 
+                  parabéns! Você já está aprovado e <strong>não precisa fazer a terceira prova</strong>.
+                </p>
+              </div>
+              
+              <div className="bg-caesoft-blue/10 border border-caesoft-blue/20 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-caesoft-blue mb-3">📚 Terceira Avaliação</h4>
+                <p className="text-light-dimmed mb-3">
+                  Se a soma das duas primeiras notas for <strong>menor que 16,0</strong>, você fará a terceira prova.
+                </p>
+                <p className="text-light-dimmed">
+                  <strong>Importante:</strong> Para ser aprovado na terceira avaliação, você precisa atingir 
+                  <strong>18,0 pontos no total das três provas</strong> (média final 6,0).
+                </p>
+              </div>
+
+              <div className="bg-caesoft-purple/10 border border-caesoft-purple/20 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-caesoft-purple mb-3">📖 Exemplos Práticos</h4>
+                <div className="space-y-3 text-light-dimmed">
+                  <div className="flex items-center">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Primeira: 8,0 + Segunda: 8,0 = <strong>Aprovado sem terceira prova</strong></span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-yellow-400 mr-2">⚠</span>
+                    <span>Primeira: 6,0 + Segunda: 5,0 = 11,0 → Precisa de 7,0 na terceira para somar 18,0</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-yellow-400 mr-2">⚠</span>
+                    <span>Primeira: 7,0 + Segunda: 4,0 = 11,0 → Precisa de 7,0 na terceira para somar 18,0</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-red-400 mr-2">✗</span>
+                    <span>Primeira: 5,0 + Segunda: 3,0 = 8,0 → Precisa de 10,0 na terceira (impossível, máximo é 10,0)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-caesoft-gold/10 border border-caesoft-gold/20 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-caesoft-gold mb-3">💡 Dica dos Veteranos</h4>
+                <p className="text-light-dimmed">
+                  Sempre se esforce para tirar boas notas nas duas primeiras avaliações. Além de evitar o estresse 
+                  da terceira prova, você mantém um histórico acadêmico forte, que é muito valorizado em processos 
+                  seletivos de estágio e emprego!
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Recursos Essenciais */}
           <div className="glass-effect-light border border-primary-soft rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl font-bold text-light mb-6 flex items-center">

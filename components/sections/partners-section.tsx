@@ -12,7 +12,7 @@ export const PartnersSection = () => {
       name: "Devs Norte",
       category: "Comunidade",
       description: "Comunidade de desenvolvedores da região Norte",
-      logo: "DN",
+      logo: "/devsnorte.png",
       color: "from-blue-500 to-purple-600",
       benefits: ["Networking", "Eventos", "Mentorias"],
       link: "https://t.me/devsnorte"

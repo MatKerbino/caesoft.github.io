@@ -2,7 +2,8 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "@/components/section"
-import { Building, MapPin, Users, BookOpen, Laptop } from "lucide-react"
+import { Building, MapPin, Users, BookOpen, Laptop, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export const AboutCampusSection = () => {
   return (
@@ -114,6 +115,27 @@ export const AboutCampusSection = () => {
                       Ananindeua - PA
                     </p>
                   </div>
+                </CardContent>
+              </Card>
+
+              <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <ExternalLink className="text-caesoft-green mr-3" size={24} />
+                    <h3 className="text-xl font-semibold text-caesoft-light">Sistema SIGAA</h3>
+                  </div>
+                  <p className="text-light-dimmed mb-4">
+                    Acesse o Sistema Integrado de Gestão de Atividades Acadêmicas para matrícula, 
+                    consulta de notas, histórico escolar e todas as informações acadêmicas.
+                  </p>
+                  <Button
+                    variant="outline"
+                    className="w-full border-caesoft-green text-caesoft-green hover:bg-caesoft-green hover:text-caesoft-navy bg-transparent"
+                    onClick={() => window.open("https://sigaa.uepa.br", "_blank")}
+                  >
+                    Acessar SIGAA
+                    <ExternalLink className="ml-2" size={16} />
+                  </Button>
                 </CardContent>
               </Card>
 
