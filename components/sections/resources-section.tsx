@@ -9,7 +9,7 @@ export const ResourcesSection = () => {
   const resources = [
     {
       icon: ExternalLink,
-      title: "Sistema Integrado de Gestão de Atividades Acadêmicas (SIGAA)",
+      title: "SIGAA",
       description: "Portal acadêmico para matrículas, notas e histórico escolar",
       link: "https://sigaa.uepa.br",
       external: true

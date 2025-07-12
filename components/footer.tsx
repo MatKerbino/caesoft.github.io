@@ -23,7 +23,7 @@ export function Footer() {
     { label: "Curso", href: "#course" },
     { label: "Campus", href: "#campus" },
     { label: "Recursos", href: "#resources" },
-    { label: "Sistema SIGAA", href: "https://sigaa.uepa.br" },
+    { label: "SIGAA", href: "https://sigaa.uepa.br" },
     { label: "Comunidade WhatsApp", href: "https://chat.whatsapp.com/LFzVOJoxqqk7jWsu8Cmuzc" },
   ]
 

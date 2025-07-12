@@ -122,11 +122,10 @@ export const AboutCampusSection = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <ExternalLink className="text-caesoft-green mr-3" size={24} />
-                    <h3 className="text-xl font-semibold text-caesoft-light">Sistema SIGAA</h3>
+                    <h3 className="text-xl font-semibold text-caesoft-light">SIGAA</h3>
                   </div>
                   <p className="text-light-dimmed mb-4">
-                    Acesse o Sistema Integrado de Gestão de Atividades Acadêmicas para matrícula, 
-                    consulta de notas, histórico escolar e todas as informações acadêmicas.
+                    Acesse o Sistema Integrado de Gestão de Atividades Acadêmicas para matrícula, notas e todas as informações acadêmicas.
                   </p>
                   <Button
                     variant="outline"
