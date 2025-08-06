@@ -23,8 +23,8 @@ export const ResourcesSection = () => {
     },
     {
       icon: Calculator,
-      title: "Resolução de Atividades",
-      description: "Material com resoluções e exercícios do curso",
+      title: "Resolução de Atividades Complementares",
+      description: "Detalhes sobre as atividades complementares do curso",
       link: "https://drive.google.com/file/d/1fxje6407EnBsab_yC0YJ0zx9ou6BMXMM/view?usp=drive_link",
       external: true
     },

@@ -312,9 +312,6 @@ export const AboutCourseSection = () => {
               <Badge variant="outline" className="!bg-caesoft-purple/80 hover:!brightness-110 !text-white !border-caesoft-purple/80 px-4 py-2 transition-all duration-200">
                 192h Estágio
               </Badge>
-              <Badge variant="outline" className="!bg-caesoft-green/80 hover:!brightness-110 !text-white !border-caesoft-green/80 px-4 py-2 transition-all duration-200">
-                80h TCC
-              </Badge>
             </div>
           </div>
 
