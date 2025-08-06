@@ -8,6 +8,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/sections/hero-section"
 import { AboutCaesoftSection } from "@/components/sections/about-caesoft-section"
+import { AiAssistantSection } from "@/components/sections/ai-assistant-section"
 import { SocialMediaSection } from "@/components/sections/social-media-section"
 import { DirectorshipSection } from "@/components/sections/directorship-section"
 import { AboutCourseSection } from "@/components/sections/about-course-section"
@@ -48,6 +49,7 @@ export default function Home() {
       <SocialMediaSection />
       <DirectorshipSection />
       <AboutCourseSection />
+      <AiAssistantSection />
       <AboutCampusSection />
       <ResourcesSection />
       <PartnersSection />

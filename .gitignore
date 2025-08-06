@@ -12,6 +12,7 @@
 docs/
 .next/
 /docs
+./docs/
 /.next
 
 # debug
