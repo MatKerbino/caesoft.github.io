@@ -132,6 +132,14 @@ const directors: DirectorMember[] = [
     "description": "Apoia as atividades administrativas e operacionais do CAESoft, prestando auxílio conforme a necessidade.",
     "photo": "/placeholder-avatar.svg",
     "linkedinUrl": "#"
+  },
+    {
+    "id": 15,
+    "name": "José Matheus",
+    "position": "Desenvolvedor",
+    "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
+    "photo": "/josematheus.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/matheuz-rodrigues-dev/"
   }
 ]
 
