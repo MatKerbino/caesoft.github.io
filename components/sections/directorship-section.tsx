@@ -40,7 +40,7 @@ const directors: DirectorMember[] = [
   {
     id: 3,
     name: "Isabelle Campos",
-    position: "Copresidente",
+    position: "Cofundadora e Vice Presidente",
     description: "Atua no apoio à presidência e na coordenação de projetos estratégicos, auxiliando na gestão administrativa e acadêmica do centro.",
     photo: "/belle.jpg",
     linkedinUrl: "https://www.linkedin.com/in/isabelle-campos-7b5b22331"
