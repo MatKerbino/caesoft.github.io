@@ -32,8 +32,8 @@ const directors: DirectorMember[] = [
   {
     id: 2,
     name: "Jorge Hermes",
-    position: "Desenvolvedor e Acelerador",
-    description: "Especialista em desenvolvimento de projetos e tecnologia, responsável pela aceleração de iniciativas tecnológicas e desenvolvimento de soluções.",
+    position: "Diretor de Desenvolvimento",
+    description: "Especialista em desenvolvimento de projetos e tecnologia, responsável pela aceleração de iniciativas tecnológicas e arquitetura de soluções.",
     photo: "jorgehermes.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jhermesn/"
   },
@@ -79,7 +79,7 @@ const directors: DirectorMember[] = [
   },
   {
     "id": 8,
-    "name": "Guilherme Silva Miranda",
+    "name": "Guilherme Miranda",
     "position": "Ajudante",
     "description": "Auxilia nas diversas atividades do centro acadêmico, prestando apoio nas demandas diárias.",
     "photo": "/guilherme.jpg",
