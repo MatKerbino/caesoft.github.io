@@ -26,8 +26,8 @@ const directors: DirectorMember[] = [
     name: "Ryan Souza",
     position: "Fundador e Presidente",
     description: "Fundador do CAESoft e líder estudantil, responsável pela visão estratégica e coordenação geral das atividades do centro acadêmico.",
-    photo: "/placeholder-avatar.svg",
-    linkedinUrl: "#"
+    photo: "/ryan.png",
+    linkedinUrl: "https://www.linkedin.com/in/theunrealryan/"
   },
   {
     id: 2,
@@ -40,49 +40,49 @@ const directors: DirectorMember[] = [
   {
     id: 3,
     name: "Isabelle Campos",
-    position: "Copresidente",
+    position: "Cofundadora e Vice Presidente",
     description: "Atua no apoio à presidência e na coordenação de projetos estratégicos, auxiliando na gestão administrativa e acadêmica do centro.",
-    photo: "/placeholder-avatar.svg",
-    linkedinUrl: "#"
+    photo: "/belle.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/isabelle-campos-7b5b22331"
   },
   {
     id: 4,
     name: "Thaylan Fonseca",
-    position: "Organizador de Eventos",
+    position: "Organizador de Eventos e Desenvolvedor Front-End",
     description: "Responsável pela organização e coordenação de eventos, workshops, palestras e atividades acadêmicas do CAESoft.",
     photo: "/thaylanfonseca.jpg",
-    linkedinUrl: "#"
+    linkedinUrl: "https://www.linkedin.com/in/thaylanbf1/ "
   },
   {
     id: 5,
     name: "Jonathan Nascimento",
     position: "Tesoureiro",
     description: "Responsável pela gestão financeira do centro acadêmico, controlando orçamentos, recursos e planejamento financeiro.",
-    photo: "/placeholder-avatar.svg",
-    linkedinUrl: "#"
+    photo: "/jonathan.jpg",
+    linkedinUrl: "http://linkedin.com/in/jonathan-nascimento-60874832b"
   },
   {
     "id": 6,
     "name": "Caio Amaral",
     "position": "Ajudante",
     "description": "Responsável por apoiar nas atividades operacionais e administrativas do CAESoft.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "/caio.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/cnnamarall/"
   },
   {
     "id": 7,
     "name": "Claudio Henrique",
     "position": "Designer",
     "description": "Responsável pela criação de identidade visual, design gráfico e material de comunicação do CAESoft.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "/claudio.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/claudiohen-rique/"
   },
   {
     "id": 8,
-    "name": "Guilherme",
+    "name": "Guilherme Silva Miranda",
     "position": "Ajudante",
     "description": "Auxilia nas diversas atividades do centro acadêmico, prestando apoio nas demandas diárias.",
-    "photo": "/placeholder-avatar.svg",
+    "photo": "/guilherme.jpg",
     "linkedinUrl": "#"
   },
   {
@@ -90,48 +90,64 @@ const directors: DirectorMember[] = [
     "name": "Iam Melo",
     "position": "Social Media",
     "description": "Responsável pela comunicação digital, gestão das redes sociais e criação de conteúdo online do CAESoft.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "/iam.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/iam-melo"
   },
   {
     "id": 10,
     "name": "Marcos Okita",
     "position": "Desenvolvedor",
     "description": "Atua no desenvolvimento de sistemas e soluções tecnológicas para o CAESoft.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "/okita.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/marcos-okitaa/"
   },
   {
     "id": 11,
     "name": "Matheus Willian",
     "position": "Desenvolvedor",
     "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "/matheusWillian.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/mkwillian/"
   },
   {
     "id": 12,
     "name": "Valdemiro Facundo",
-    "position": "Multimídia",
+    "position": "Gestor Multimídia",
     "description": "Responsável pela criação de conteúdo multimídia, como vídeos e animações, para as atividades do CAESoft.",
     "photo": "/valdemirofacundo.png",
-    "linkedinUrl": "#"
+    "linkedinUrl": "https://www.linkedin.com/in/valdemiro-f-51637a282/"
   },
   {
     "id": 13,
     "name": "Erllon Olivier",
     "position": "Multimídia",
     "description": "Auxilia na criação de conteúdo multimídia e na gestão de vídeos e outros materiais audiovisuais.",
-    "photo": "/placeholder-avatar.svg",
+    "photo": "/erllon.jpg",
     "linkedinUrl": "#"
   },
   {
     "id": 14,
     "name": "Luyze Marques",
-    "position": "Ajudante",
+    "position": "Secretária",
     "description": "Apoia as atividades administrativas e operacionais do CAESoft, prestando auxílio conforme a necessidade.",
-    "photo": "/placeholder-avatar.svg",
-    "linkedinUrl": "#"
+    "photo": "luyze.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/luyzee-marques/"
+  },
+    {
+    "id": 15,
+    "name": "Joice Neves",
+    "position": "Gestora Multimídia",
+    "description": "Auxilia na criação de conteúdo multimídia e na gestão de vídeos e outros materiais audiovisuais.",
+    "photo": "joice.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/joice-neves-2b6438341/"
+  },
+    {
+    "id": 16,
+    "name": "José Matheus",
+    "position": "Desenvolvedor",
+    "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
+    "photo": "/josematheus.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/matheuz-rodrigues-dev/"
   }
 ]
 
