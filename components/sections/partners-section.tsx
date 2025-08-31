@@ -52,6 +52,51 @@ export const PartnersSection = () => {
       color: "from-caesoft-purple to-caesoft-green",
       benefits: ["Networking", "Eventos", "Mentorias", "Python", "Data Science"],
       link: "https://discord.gg/98eURQMjQp"
+    },
+    {
+      name: "LovelaceTech",
+      category: "Comunidade",
+      description: "Comunidade dedicada ao empoderamento feminino na tecnologia, promovendo inclusão, networking e desenvolvimento profissional para mulheres na área de TI.",
+      logo: "/lovelace.png",
+      color: "from-red-500 to-blue-600",
+      benefits: ["Networking", "Eventos", "Mentorias", "Inovação", "Empoderamento Feminino"],
+      link: "https://www.instagram.com/lovelacetech/"
+    },
+    {
+      name: "Porãygua Dev Group",
+      category: "Comunidade",
+      description: "Comunidade de desenvolvedores da região amazônica, fomentando a diversidade cultural e tecnológica no desenvolvimento de software.",
+      logo: "/poraygua.png",
+      color: "from-teal-500 to-orange-600",
+      benefits: ["Networking", "Eventos", "Mentorias", "Desenvolvimento", "Diversidade Cultural"],
+      link: "https://www.instagram.com/poraygua/"
+    },
+    {
+      name: "CAECOMP - UFPA",
+      category: "Educação",
+      description: "Centro Acadêmico de Engenharia da Computação da UFPA, representando estudantes e promovendo atividades acadêmicas, eventos e integração entre alunos.",
+      logo: "/caecomp.png",
+      color: "from-blue-600 to-yellow-500",
+      benefits: ["Integração", "Projetos", "Capacitação", "Acadêmico", "Representação Estudantil"],
+      link: "http://linktr.ee/caecomp.ufpa"
+    },
+    {
+      name: "XibéSec",
+      category: "Segurança",
+      description: "Comunidade especializada em segurança da informação e cibersegurança, oferecendo treinamentos, workshops e networking na área de segurança digital.",
+      logo: "/xibesec.png",
+      color: "from-blue-500 to-cyan-600",
+      benefits: ["Networking", "Eventos", "Mentorias", "Cybersecurity", "Segurança Digital"],
+      link: "https://www.instagram.com/xibesec/"
+    },
+    {
+      name: "LinuxTips",
+      category: "Comunidade",
+      description: "Comunidade brasileira de usuários e entusiastas Linux, compartilhando conhecimento, dicas e promovendo o uso de software livre e open source. Use o cupom do Ryan Ricardo para 10% de desconto nos treinamentos da plataforma. Cupom: simpatia.dev",
+      logo: "/linuxtips.png",
+      color: "from-orange-500 to-red-600",
+      benefits: ["Networking", "Eventos", "Mentorias", "Linux", "Open Source", "Software Livre"],
+      link: "https://linuxtips.io/"
     }
   ]
 
