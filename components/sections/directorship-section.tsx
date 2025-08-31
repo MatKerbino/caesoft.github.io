@@ -79,7 +79,7 @@ const directors: DirectorMember[] = [
   },
   {
     "id": 8,
-    "name": "Guilherme",
+    "name": "Guilherme Silva Miranda",
     "position": "Ajudante",
     "description": "Auxilia nas diversas atividades do centro acadêmico, prestando apoio nas demandas diárias.",
     "photo": "/guilherme.jpg",
