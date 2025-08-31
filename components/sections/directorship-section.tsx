@@ -128,7 +128,7 @@ const directors: DirectorMember[] = [
   {
     "id": 14,
     "name": "Luyze Marques",
-    "position": "Ajudante",
+    "position": "Secretária",
     "description": "Apoia as atividades administrativas e operacionais do CAESoft, prestando auxílio conforme a necessidade.",
     "photo": "luyze.jpg",
     "linkedinUrl": "https://www.linkedin.com/in/luyzee-marques/"
