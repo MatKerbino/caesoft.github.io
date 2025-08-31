@@ -135,6 +135,14 @@ const directors: DirectorMember[] = [
   },
     {
     "id": 15,
+    "name": "Joice Neves",
+    "position": "Gestora Multimídia",
+    "description": "Auxilia na criação de conteúdo multimídia e na gestão de vídeos e outros materiais audiovisuais.",
+    "photo": "joice.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/joice-neves-2b6438341/"
+  },
+    {
+    "id": 16,
     "name": "José Matheus",
     "position": "Desenvolvedor",
     "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
