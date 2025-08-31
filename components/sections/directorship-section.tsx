@@ -48,7 +48,7 @@ const directors: DirectorMember[] = [
   {
     id: 4,
     name: "Thaylan Fonseca",
-    position: "Organizador de Eventos",
+    position: "Organizador de Eventos e Desenvolvedor Front-End",
     description: "Responsável pela organização e coordenação de eventos, workshops, palestras e atividades acadêmicas do CAESoft.",
     photo: "/thaylanfonseca.jpg",
     linkedinUrl: "https://www.linkedin.com/in/thaylanbf1/ "
