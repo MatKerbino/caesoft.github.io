@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, BookOpen } from "lucide-react"
+import { Menu, X, BookOpen, Newspaper } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -91,6 +91,15 @@ export function Navbar() {
                 </button>
               ))}
               
+              {/* Botão Notícias */}
+              <Link
+                href="/noticias"
+                className="relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full bg-gradient-to-r from-caesoft-purple to-caesoft-green text-white hover:shadow-lg hover:shadow-caesoft-purple/30 flex items-center gap-2"
+              >
+                <Newspaper size={16} />
+                <span>Notícias</span>
+              </Link>
+
               {/* Botão Guia do Calouro */}
               <Link
                 href="/guia-do-calouro"
@@ -134,6 +143,16 @@ export function Navbar() {
                 </button>
               ))}
               
+              {/* Link Notícias no Mobile */}
+              <Link
+                href="/noticias"
+                className="relative text-left px-4 py-3 rounded-lg transition-all duration-300 bg-gradient-to-r from-caesoft-purple to-caesoft-green text-white flex items-center gap-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Newspaper size={16} />
+                Notícias
+              </Link>
+
               {/* Link Guia do Calouro no Mobile */}
               <Link
                 href="/guia-do-calouro"
