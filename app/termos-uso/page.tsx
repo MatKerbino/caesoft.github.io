@@ -106,7 +106,7 @@ export default function TermosUso() {
                   Privacidade e Coleta de Dados
                 </h3>
                 <p className="text-light-dimmed leading-relaxed">
-                  <strong className="text-caesoft-green">Garantimos que não coletamos nenhuma informação pessoal</strong> 
+                  <strong className="text-caesoft-green">Garantimos que não coletamos nenhuma informação pessoal</strong>{" "}
                   dos visitantes deste site. Não utilizamos cookies de rastreamento, ferramentas de analytics 
                   ou qualquer outro mecanismo que capture dados dos usuários. Este site é puramente informativo 
                   e respeita completamente sua privacidade.
