@@ -66,18 +66,19 @@ export const ResourcesSection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {resources.map((resource, index) => (
-              <Card key={index} className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+              <Card key={index} className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
+                  <div className="flex items-center">
                     <resource.icon
                       className="text-caesoft-purple mr-3 group-hover:scale-110 transition-transform"
                       size={24}
                     />
                     <h3 className="text-xl font-semibold text-caesoft-light">{resource.title}</h3>
                   </div>
-                  <p className="text-light-dimmed mb-4">
+                  <p className="text-light-dimmed">
                     {resource.description}
                   </p>
+                  <div className="mt-auto h-4" />
                   <Button
                     variant="outline"
                     className="w-full border-caesoft-purple text-caesoft-purple hover:bg-caesoft-purple hover:text-white bg-transparent"
@@ -96,18 +97,19 @@ export const ResourcesSection = () => {
               <span className="text-gradient">Comunidades</span> Estudantis
             </h3>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+              <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
+                  <div className="flex items-center">
                     <MessageCircle
                       className="text-green-400 mr-3 group-hover:scale-110 transition-transform"
                       size={24}
                     />
                     <h3 className="text-xl font-semibold text-caesoft-light">Comunidade WhatsApp</h3>
                   </div>
-                  <p className="text-light-dimmed mb-4">
+                  <p className="text-light-dimmed">
                     Participe da nossa comunidade no WhatsApp para tirar dúvidas e trocar experiências com outros estudantes.
                   </p>
+                  <div className="mt-auto h-4" />
                   <Button
                     variant="outline"
                     className="w-full border-green-400 text-green-400 hover:bg-green-400 hover:text-caesoft-navy bg-transparent"
@@ -119,18 +121,19 @@ export const ResourcesSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+              <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
+                  <div className="flex items-center">
                     <MessageSquare
                       className="text-purple-400 mr-3 group-hover:scale-110 transition-transform"
                       size={24}
                     />
                     <h3 className="text-xl font-semibold text-caesoft-light">Comunidade Discord</h3>
                   </div>
-                  <p className="text-light-dimmed mb-4">
+                  <p className="text-light-dimmed">
                     Participe da nossa comunidade no Discord para networking e discussões técnicas em tempo real.
                   </p>
+                  <div className="mt-auto h-4" />
                   <Button
                     variant="outline"
                     className="w-full border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-caesoft-navy bg-transparent"

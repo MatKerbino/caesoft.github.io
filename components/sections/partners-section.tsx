@@ -136,9 +136,9 @@ export const PartnersSection = () => {
           {/* Grid de Parceiros */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {partners.map((partner, index) => (
-              <Card key={index} className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+              <Card key={index} className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl group h-full">
+                <CardContent className="p-6 flex flex-col gap-4 h-full">
+                  <div className="flex items-center">
                     <div className={`w-12 h-12 bg-gradient-to-br ${partner.color} rounded-xl flex items-center justify-center mr-4 shadow-lg group-hover:scale-110 transition-transform overflow-hidden`}>
                       {partner.logo.startsWith('http') || partner.logo.startsWith('/') ? (
                         <img 
@@ -161,11 +161,11 @@ export const PartnersSection = () => {
                     </div>
                   </div>
                   
-                  <p className="text-light-dimmed text-sm mb-4 leading-relaxed">
+                  <p className="text-light-dimmed text-sm leading-relaxed">
                     {partner.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2">
                     {partner.benefits.map((benefit, benefitIndex) => (
                       <Badge 
                         key={benefitIndex}
@@ -176,11 +176,11 @@ export const PartnersSection = () => {
                       </Badge>
                     ))}
                   </div>
-
+                  <div className="mt-auto h-4" />
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    className="w-full text-caesoft-green hover:text-white hover:bg-caesoft-green/90 transition-all duration-300 mt-2"
+                    className="w-full text-caesoft-green hover:text-white hover:bg-caesoft-green/90 transition-all duration-300"
                     onClick={() => window.open(partner.link, "_blank")}
                   >
                     Saber Mais
@@ -193,14 +193,15 @@ export const PartnersSection = () => {
 
           {/* Call to Action para Parcerias */}
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl">
-              <CardContent className="p-8 text-center">
-                <Globe className="w-16 h-16 text-caesoft-purple mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-caesoft-light mb-4">Para Empresas</h3>
-                <p className="text-light-dimmed mb-6">
+            <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl h-full">
+              <CardContent className="p-8 text-center flex flex-col gap-4 h-full">
+                <Globe className="w-16 h-16 text-caesoft-purple mx-auto" />
+                <h3 className="text-2xl font-bold text-caesoft-light">Para Empresas</h3>
+                <p className="text-light-dimmed">
                   Interessado em se tornar parceiro do CAESoft? Oferecemos acesso a talentos qualificados 
                   e oportunidades de colaboração acadêmica.
                 </p>
+                <div className="mt-auto h-4" />
                 <Button className="bg-caesoft-purple hover:bg-caesoft-purple/90 text-white">
                   Seja um Parceiro
                   <Building2 className="ml-2" size={16} />
@@ -208,14 +209,15 @@ export const PartnersSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl">
-              <CardContent className="p-8 text-center">
-                <Zap className="w-16 h-16 text-caesoft-green mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-caesoft-light mb-4">Para Estudantes</h3>
-                <p className="text-light-dimmed mb-6">
+            <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl h-full">
+              <CardContent className="p-8 text-center flex flex-col gap-4 h-full">
+                <Zap className="w-16 h-16 text-caesoft-green mx-auto" />
+                <h3 className="text-2xl font-bold text-caesoft-light">Para Estudantes</h3>
+                <p className="text-light-dimmed">
                   Explore oportunidades exclusivas de estágio, emprego e desenvolvimento profissional 
                   com nossos parceiros.
                 </p>
+                <div className="mt-auto h-4" />
                 <Button 
                   variant="outline"
                   className="border-caesoft-green text-caesoft-green hover:bg-caesoft-green hover:text-caesoft-navy bg-transparent"
