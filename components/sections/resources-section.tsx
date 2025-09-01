@@ -48,6 +48,13 @@ export const ResourcesSection = () => {
       description: "Estatuto, atas, relatórios e outros documentos do CAEsoft",
       link: "https://drive.google.com/drive/folders/1F630z1nOCDCizRGC5aAVKaovXPBy-6wx?usp=sharing",
       external: true
+    },
+    {
+      icon: FileText,
+      title: "Guia do Estágio",
+      description: "Guia desenvolvido pelo professor Gleisson Mendes sobre o processo de estágio.",
+      link: "https://drive.google.com/drive/folders/1WBWHWh4fRgikgVkjKJR3gehtPdd2bCea?usp=sharing",
+      external: true
     }
   ]
 
