@@ -41,6 +41,13 @@ export const ResourcesSection = () => {
       description: "Normas e regulamentações para uso da biblioteca",
       link: "https://docs.google.com/document/d/162w5iYMEwGCOiqg1avuauMHi3q5FqgkzSksQFK_rpec/edit?usp=sharing",
       external: true
+    },
+    {
+      icon: FileText,
+      title: "Documentos do CAEsoft",
+      description: "Estatuto, atas, relatórios e outros documentos do CAEsoft",
+      link: "https://drive.google.com/drive/folders/1F630z1nOCDCizRGC5aAVKaovXPBy-6wx?usp=sharing",
+      external: true
     }
   ]
 
