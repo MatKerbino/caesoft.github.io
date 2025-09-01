@@ -83,7 +83,7 @@ export const PartnersSection = () => {
     {
       name: "XibéSec",
       category: "Segurança",
-      description: "Comunidade especializada em segurança da informação e cibersegurança, oferecendo treinamentos, workshops e networking na área de segurança digital.",
+      description: "Comunidade especializada em segurança da informação e cibersegurança, oferecendo treinamentos, workshops e networking na área de segurança digital. Use o cupom do CAESoft para 20% de desconto na inscrição do evento. Cupom: CAESOFT20",
       logo: "/xibesec.png",
       color: "from-blue-500 to-cyan-600",
       benefits: ["Networking", "Eventos", "Mentorias", "Cybersecurity", "Segurança Digital"],
