@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
 import { Instagram, Github, Linkedin, Calendar, Users, Trophy, BookOpen, MessageCircle, Gamepad2 } from "lucide-react"
+import Image from "next/image"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Pagination, Autoplay } from 'swiper/modules'
+import { useRef, useCallback } from 'react'
 
 export const SocialMediaSection = () => {
   const socialMedia = [
@@ -80,6 +86,48 @@ export const SocialMediaSection = () => {
       highlight: "Biblioteca digital"
     }
   ]
+
+  const participations = [
+    {
+      image: "/caesoft.jpg",
+      caption: "Assembleia Geral 2024.2"
+    },
+    {
+      image: "/devsnorte.png",
+      caption: "Parceria com a comunidade Devs Norte"
+    },
+    {
+      image: "/uepa.jpg",
+      caption: "UEPA Comunidade Acadêmica"
+    },
+    {
+      image: "/runascloud.png",
+      caption: "Run as Cloud - Mentorias e networking"
+    },
+    {
+      image: "/poraygua.png",
+      caption: "Po'Raygua - Evento cultural"
+    }
+  ]
+
+  const swiperRef = useRef<any>(null)
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  const handleUserInteraction = useCallback(() => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.stop()
+
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+
+      timeoutRef.current = setTimeout(() => {
+        if (swiperRef.current && swiperRef.current.autoplay) {
+          swiperRef.current.autoplay.start()
+        }
+      }, 1000)
+    }
+  }, [])
 
   return (
     <Section id="social-media">
@@ -162,6 +210,54 @@ export const SocialMediaSection = () => {
                 </Card>
               ))}
             </div>
+          </div>
+
+          {/* Mural de Participações */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold text-caesoft-light mb-8 text-center">
+              Nossas Atividades
+            </h3>
+            <Swiper
+              ref={swiperRef}
+              modules={[Pagination, Autoplay]}
+              spaceBetween={24}
+              slidesPerView={1}
+              loop={true}
+              grabCursor={true}
+              pagination={{ clickable: true, dynamicBullets: true }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              className="pb-10"
+              onTouchStart={handleUserInteraction}
+              onSliderMove={handleUserInteraction}
+              onTransitionStart={handleUserInteraction}
+            >
+              {participations.map((item, index) => (
+                <SwiperSlide key={index} className="py-2">
+                  <Card className="glass-effect-light border-purple-soft overflow-hidden">
+                    <CardContent className="p-0">
+                      <div className="relative w-full h-[28rem] md:h-[36rem]">
+                        <Image
+                          src={item.image}
+                          alt={item.caption}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 800px"
+                          priority={index === 0}
+                        />
+                      </div>
+                      <div className="p-4 text-center">
+                        <p className="text-light-dimmed text-sm">{item.caption}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
           {/* Call to Action */}
