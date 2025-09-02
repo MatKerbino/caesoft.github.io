@@ -5,11 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, BookOpen, Newspaper } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,11 +35,17 @@ export function Navbar() {
   }, [])
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setIsMobileMenuOpen(false)
+    const onHome = pathname === "/"
+    if (onHome) {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+        setIsMobileMenuOpen(false)
+        return
+      }
     }
+    router.push(`/#${sectionId}`)
+    setIsMobileMenuOpen(false)
   }
 
   const navItems = [
@@ -65,7 +74,7 @@ export function Navbar() {
                 type="button"
               >
                 <Image 
-                  src="caesoftwhite.png" 
+                  src="/caesoftwhite.png" 
                   alt="CAESoft Logo" 
                   width={1119}
                   height={556}

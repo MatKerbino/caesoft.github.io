@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, BookOpen, Users, Heart, MessageCircle, Star, Coffee, Code, Lightbulb, Target, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { Metadata } from "next"
+import { Navbar } from "@/components/navbar"
 
 export const metadata: Metadata = {
   title: 'Guia do Calouro',
@@ -21,13 +22,10 @@ export const metadata: Metadata = {
 export default function GuiaDoCalouro() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-navy-dark via-navy-light to-navy-darker">
+      <Navbar />
       {/* Header */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 pt-24 pb-8">
         <Link href="/">
-          <Button variant="outline" className="mb-8 border-caesoft-green text-caesoft-green hover:bg-caesoft-green hover:text-caesoft-navy bg-transparent">
-            <ArrowLeft size={16} className="mr-2" />
-            Voltar ao Início
-          </Button>
         </Link>
 
         {/* Título */}

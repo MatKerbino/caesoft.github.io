@@ -7,15 +7,23 @@ coverImage: "/noticias/jaca.png"
 createdAt: "2025-08-31T23:12:00.000Z"
 ---
 
-Olá! Este é o primeiro post do nosso blog. Aqui você encontrará:
+# Olá! Este é o primeiro post do nosso blog. Aqui você encontrará:
 
 - Atualizações do CAESoft
 - Agenda de eventos
 - Oportunidades e vagas
 - Artigos e publicações dos alunos
 
-Uma imagem de exemplo abaixo (coloque sua imagem em `public/noticias/`):
+Uma imagem de exemplo abaixo (coloque sua imagem em public/noticias/):
+
+```
+public class Jaca {
+  public static void main(String[] args) {
+    System.out.println("Jaca?");
+  }
+}
+```
 
 ![Imagem exemplo](/noticias/jaca.png)
 
-Obrigado por acompanhar!
+## Obrigado por acompanhar!
