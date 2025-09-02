@@ -89,25 +89,45 @@ export const SocialMediaSection = () => {
 
   const participations = [
     {
-      image: "/caesoft.jpg",
-      caption: "Assembleia Geral 2024.2"
+      image: "/participacoes/1feiravocacionalcaesoft.png",
+      caption: "Primeira Feira Vocacional da UEPA com apresentação dos membros do CAESoft"
     },
     {
-      image: "/devsnorte.png",
-      caption: "Parceria com a comunidade Devs Norte"
+      image: "/participacoes/1feiravocacionaluepa.png",
+      caption: "Primeira Feira Vocacional da UEPA Campus Ananindeua com apoio ativo do CAESoft"
     },
     {
-      image: "/uepa.jpg",
-      caption: "UEPA Comunidade Acadêmica"
+      image: "/participacoes/orgflisolananindeua.png",
+      caption: "FliSol Ananindeua com participação ativa na organização e apoio à realização do evento"
     },
     {
-      image: "/runascloud.png",
-      caption: "Run as Cloud - Mentorias e networking"
+      image: "/participacoes/awsugbelem.png",
+      caption: "AWS User Group Belém com apoio da Universidade do Estado do Pará e CAESoft"
     },
     {
-      image: "/poraygua.png",
-      caption: "Po'Raygua - Evento cultural"
-    }
+      image: "/participacoes/feiravocacionalidealbatistacampos.png",
+      caption: "Feira Vocacional Ideal Batista Campos"
+    },
+    {
+      image: "/participacoes/feiravocacionalrosanabastos.png",
+      caption: "Participação na Feira Vocacional do grupo Rosana Bastos"
+    },
+    {
+      image: "/participacoes/feiravocacionalidealalmirante.png",
+      caption: "Participação na Feira Vocacional do Ideal Almirante Barroso"
+    },
+    {
+      image: "/participacoes/orgpynorte.png",
+      caption: "Apoio ao Evento da Python Norte"
+    },
+    {
+      image: "/participacoes/feiravocacionalidealcn.png",
+      caption: "Participação na Feira Vocacional do Ideal Cidade Nova"
+    },
+    {
+      image: "/participacoes/nivelamentocalouros.png",
+      caption: "Nivelamento para calouros do BES 2025 organizado pelo CAESoft com apoio da UEPA Ananindeua"
+    },
   ]
 
   const swiperRef = useRef<any>(null)
