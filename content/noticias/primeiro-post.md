@@ -3,7 +3,7 @@ title: "Bem-vindo ao Portal de Notícias do CAESoft"
 author: "Jorge Hermes"
 description: "Anunciamos o novo espaço de notícias, eventos e comunicados."
 categories: ["Comunicados", "Eventos"]
-coverImage: "/noticias/jaca.png"
+coverImage: "/noticias/JACA.png"
 createdAt: "2025-08-31T23:12:00.000Z"
 ---
 
@@ -24,6 +24,6 @@ public class Jaca {
 }
 ```
 
-![Imagem exemplo](/noticias/jaca.png)
+![Imagem exemplo](/noticias/JACA.png)
 
 ## Obrigado por acompanhar!
