@@ -38,7 +38,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen z-10">
       <AnimatedBackground />
       <ScrollGear />
       <ScrollProgress />

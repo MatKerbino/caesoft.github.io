@@ -108,5 +108,5 @@ export function AnimatedBackground() {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className="fixed inset-0 -z-10 opacity-50" style={{ pointerEvents: "none" }} />
+  return <canvas ref={canvasRef} className="fixed inset-0 z-0 opacity-50" style={{ pointerEvents: "none" }} />
 }

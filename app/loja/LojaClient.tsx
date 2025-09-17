@@ -386,7 +386,7 @@ export default function LojaClient() {
                           ))}
                         </select>
                       ) : (
-                        <span className="text-xs text-light-muted">Sem tamanho</span>
+                        <span className="text-xs text-light-muted"></span>
                       )}
 
                       <div className="flex items-center gap-2">
