@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { getAllPosts } from '@/lib/posts'
 import { formatBRDate } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Notícias',
@@ -18,7 +19,7 @@ export default async function NoticiasPage() {
       <main className="min-h-screen pt-24 pb-16 container mx-auto px-4">
       <section className="mb-10">
         <h1 className="text-4xl font-bold text-caesoft-light title-quanta mb-2">Notícias</h1>
-        <p className="text-light-muted">Acompanhe as novidades, eventos e comunicados.</p>
+        <p className="text-light-muted max-w-3xl text-justify">Acompanhe as novidades, eventos e comunicados.</p>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -48,6 +49,7 @@ export default async function NoticiasPage() {
         ))}
       </section>
     </main>
+    <Footer />
     </>
   )
 }

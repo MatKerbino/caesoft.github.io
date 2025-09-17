@@ -3,6 +3,7 @@ import { ArrowLeft, BookOpen, Users, Heart, MessageCircle, Star, Coffee, Code, L
 import Link from "next/link"
 import { Metadata } from "next"
 import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: 'Guia do Calouro',
@@ -357,6 +358,7 @@ export default function GuiaDoCalouro() {
 
         </div>
       </div>
+      <Footer />
     </div>
   )
 } 

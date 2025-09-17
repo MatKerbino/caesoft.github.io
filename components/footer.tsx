@@ -46,7 +46,7 @@ export function Footer() {
             <div className="lg:col-span-1 space-y-4">
               <div className="flex items-center space-x-3 mb-4">
                 <Image 
-                  src="purplelogo.png" 
+                  src="/purplelogo.png" 
                   alt="CAESoft Logo" 
                   width={48}
                   height={48}

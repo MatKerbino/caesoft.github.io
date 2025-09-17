@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Code, Github, Instagram, Linkedin, MessageCircle, BookOpen } from "lucide-react"
+import { Code, Github, Instagram, Linkedin, MessageCircle, BookOpen, ShoppingBag } from "lucide-react"
 import { Section } from "@/components/section"
 import Image from "next/image"
 import Link from "next/link"
@@ -76,15 +76,24 @@ export const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
               </div>
             </div>
 
-            {/* Botão Guia do Calouro */}
-            <div className="animate-fade-in">
+            {/* CTAs */}
+            <div className="animate-fade-in flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/guia-do-calouro">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-caesoft-purple to-caesoft-green hover:from-caesoft-purple/90 hover:to-caesoft-green/90 text-white font-medium px-8 py-6 text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto"
+                  className="bg-gradient-to-r from-caesoft-purple to-caesoft-green hover:from-caesoft-purple/90 hover:to-caesoft-green/90 text-white font-medium px-8 py-6 text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-3"
                 >
                   <BookOpen size={20} />
                   Acesse o Guia do Calouro
+                </Button>
+              </Link>
+              <Link href="/loja">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-500/90 hover:to-amber-600/90 text-white font-medium px-8 py-6 text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-3"
+                >
+                  <ShoppingBag size={20} />
+                  Loja
                 </Button>
               </Link>
             </div>
