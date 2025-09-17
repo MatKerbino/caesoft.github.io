@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 
   
   other: {
-    'theme-color': '#8B5CF6',
+    'theme-color': '#0C091F',
     'msapplication-TileColor': '#8B5CF6',
     'msapplication-TileImage': '/mstile-144x144.png',
     

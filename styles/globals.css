@@ -62,11 +62,14 @@
   }
   html {
     scroll-behavior: smooth;
+    background-color: #0C091F;
+    color-scheme: dark;
   }
   body {
     @apply bg-background text-foreground font-fluent;
     overflow-x: hidden;
     background: linear-gradient(135deg, #0C091F 0%, #0F0B26 25%, #140F2D 50%, #0C091F 75%, #080518 100%) fixed;
+    background-color: #0C091F;
   }
 }
 
