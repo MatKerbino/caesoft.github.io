@@ -1,10 +1,10 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useMemo, useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Minus, Plus, ShoppingCart, Tag } from "lucide-react"
+import { Minus, Plus, ShoppingCart, Tag, X } from "lucide-react"
 import { Currency } from "@/components/ui/currency"
 
 type MerchItem = {
@@ -148,7 +148,39 @@ const CATEGORIES: MerchCategory[] = [
         image: "/loja/bottons/6.png",
         priceBRL: 4,
         model: "Botton 404",
-      }
+      },
+      {
+        id: "botton-eng-soft-nome-white",
+        title: "Botton Eng. Software claro",
+        description: "Botton de alta qualidade para personalizar mochilas e roupas. Design clean em roxo escrito Engenharia de Software da UEPA.",
+        image: "/loja/bottons/7.png",
+        priceBRL: 4,
+        model: "Botton Eng. Software claro",
+      },
+      {
+        id: "botton-eng-soft-simbolo-white",
+        title: "Botton Simbolo Eng. Software Claro",
+        description: "Botton de alta qualidade para personalizar mochilas e roupas. Visual marcante claro com o símbolo da Engenharia de Software da UEPA.",
+        image: "/loja/bottons/8.png",
+        priceBRL: 4,
+        model: "Botton Símbolo Eng. Software claro",
+      },
+      {
+        id: "botton-eng-soft-simbolo-roxo",
+        title: "Botton Simbolo Eng. Software Roxo",
+        description: "Botton de alta qualidade para personalizar mochilas e roupas. Visual em roxo característico com o símbolo da Engenharia de Software da UEPA.",
+        image: "/loja/bottons/9.png",
+        priceBRL: 4,
+        model: "Botton Símbolo Eng. Software Roxo",
+      },
+      {
+        id: "botton-eng-soft-nome-roxo",
+        title: "Botton Eng. Software Roxo",
+        description: "Botton de alta qualidade para personalizar mochilas e roupas. Design em roxo característico escrito Engenharia de Software da UEPA.",
+        image: "/loja/bottons/10.png",
+        priceBRL: 4,
+        model: "Botton Eng. Software roxo",
+      },
     ],
   },
   // {
@@ -169,10 +201,78 @@ const CATEGORIES: MerchCategory[] = [
 
 const CATEGORY_ORDER: Array<MerchCategory["id"]> = ["promocoes", "vestuario", "acessorios"]
 
+const ImagePreviewModal = ({ imageUrl, isOpen, onClose }: { imageUrl: string | null; isOpen: boolean; onClose: () => void }) => {
+  const [shouldRender, setShouldRender] = useState(false);
+  const [animateIn, setAnimateIn] = useState(false);     
+
+  useEffect(() => {
+    if (isOpen) {
+      setShouldRender(true); 
+      const timer = setTimeout(() => {
+        setAnimateIn(true);
+      }, 50);
+      return () => clearTimeout(timer);
+    } else {
+      setAnimateIn(false); 
+      const timer = setTimeout(() => {
+        setShouldRender(false); 
+      }, 300); 
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
+
+  if (!shouldRender || !imageUrl) return null;
+
+  return (
+    <div
+      className={`fixed inset-0 bg-black/60 flex items-center justify-center z-50 transition-opacity duration-300 ${animateIn ? 'opacity-100' : 'opacity-0'}`}
+      onClick={onClose} 
+    >
+      <div
+        style={{
+          width: '60vw', 
+          height: '60vh', 
+          maxWidth: '600px', 
+          maxHeight: '600px', 
+          backgroundColor: 'rgba(22, 20, 27, 0.9)', 
+          borderRadius: '0.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)',
+        }}
+        onClick={(e) => e.stopPropagation()} 
+        className={`relative transition-all duration-300 ease-out hover-glow ${animateIn ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 p-2.5 bg-black/20 rounded-full text-gray-300 hover:bg-black/50 hover:text-white transition-colors z-10"
+          aria-label="Fechar modal"
+        >
+          <X size={20} />
+        </button>
+
+        <div 
+          style={{ position: 'relative', width: '90%', height: '90%' }} 
+        >
+          <Image
+            src={imageUrl}
+            alt="Pré-visualização do produto"
+            fill
+            style={{ objectFit: 'contain', borderRadius: '0.1rem' }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default function LojaClient() {
   const [selectedQuantities, setSelectedQuantities] = useState<Record<string, number>>({})
   const [selectedSizeByItem, setSelectedSizeByItem] = useState<Record<string, string>>({})
   const [clipboardError, setClipboardError] = useState<string | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImageSrc, setSelectedImageSrc] = useState<string | null>(null);
 
   const itemMap = useMemo(() => {
     const map = new Map<string, { item: MerchItem; categoryId: string; categoryName: string }>()
@@ -262,8 +362,19 @@ export default function LojaClient() {
     }
   }
 
+  const openImageModal = (imageUrl: string) => {
+    setSelectedImageSrc(imageUrl);
+    setIsModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setIsModalOpen(false);
+    //setSelectedImageSrc(null); 
+  };
+
   return (
     <>
+    <ImagePreviewModal imageUrl={selectedImageSrc} isOpen={isModalOpen} onClose={closeImageModal} />
       <section className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <h1 className="text-4xl font-bold text-caesoft-light title-quanta mb-2">Loja</h1>
@@ -307,7 +418,10 @@ export default function LojaClient() {
                   key={item.id}
                   className="rounded-xl border border-amber-500/50 bg-card-dark p-5 hover:shadow-lg hover:shadow-amber-500/15 transition-all h-full flex flex-col"
                 >
-                  <div className="w-full h-44 relative mb-4">
+                  <div
+                    className="w-full h-44 relative mb-4 cursor-pointer"
+                    onClick={() => openImageModal(item.image)}
+                  >
                     <Image src={item.image} alt={item.title} fill className="object-cover rounded-lg" />
                   </div>
                   <div className="flex items-center justify-between mb-1">
@@ -395,7 +509,10 @@ export default function LojaClient() {
                         : "rounded-xl border border-purple-soft bg-card-dark p-5 hover-glow transition-all h-full flex flex-col"
                     }
                   >
-                    <div className="w-full h-44 relative mb-4">
+                    <div 
+                      className="w-full h-44 relative mb-4 cursor-pointer"
+                      onClick={() => openImageModal(item.image)}
+                    >
                       <Image src={item.image} alt={item.title} fill className="object-cover rounded-lg" />
                     </div>
                     <div className="flex items-center justify-between mb-1">
